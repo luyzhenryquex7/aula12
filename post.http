@@ -1,0 +1,30 @@
+GET http://localhost:8080/api/posts
+
+###
+
+GET http://localhost:8080/api/posts/9
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjUsImlzcyI6ImltZC1iYWNrZW5kIiwiYXVkIjoiaW1kLWZyb250ZW5kIiwiZW1haWwiOiJuZXd0b25AZ21haWwuY29tIiwiaWF0IjoxNjk2NDI0MzM3LCJleHAiOjE2OTY0Mjc5Mzd9.BmWSF-dHsVww2yTATO_9EUqWM4grlXWgGmVw92fVfrs
+
+{
+    "titulo": "Titulo do post",
+    "texto": "Conteudo do seu post...",
+    "userId": 3
+}
+
+###
+
+PUT http://localhost:8080/api/posts?id=2
+Content-Type: application/json
+
+{
+    "titulo": "Meu amor",
+    "texto": "O amor é algo impossível"
+}
+
+###
+DELETE http://localhost:8080/api/posts?id=11
